@@ -1,0 +1,113 @@
+/******************** GENERAL STYLE *************************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/******************** lOGIN STYLE *************************/
+
+#login {
+    background-image: url(../imagenes/login/login-background-2.jpg);
+    background-size: cover;
+    background-position: 25%;
+    color: white;
+    width: auto;
+    height: 100vh;
+    opacity: 100%;
+}
+
+.login-div {
+    text-align: center;
+    position: relative;
+    margin-top: 30vh;
+    animation-name: example;
+    animation-duration: 2.4s;
+    animation-direction: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.login-div img {
+    margin-bottom: 30px;
+}
+
+.login-form {
+    color: black;
+}
+
+.container-login {
+    width: 540px;
+}
+
+@keyframes example {
+    0% {
+        top: -200px;
+        opacity: 0%;
+        animation-duration: 0.5s;
+    }
+    50% {
+        top: 50px;
+    }
+    100% {
+        top: 0px;
+        opacity: 100%;
+    }
+}
+
+#button-login button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 18px;
+    margin-top: 20px;
+    border-color: #2e2e2e;
+    transition: border-color 0.5s;
+}
+
+#button-login button:hover {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 18px;
+    margin-top: 20px;
+    border-color: #ffffff;
+}
+
+.previous {
+    background-color: #817e5f;
+    color: black;
+    float: left;
+}
+
+.next {
+    background-color: #2e2e2e;
+    color: white;
+    float: right;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+#activate-login {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.collapse {
+    transition: ;
+}
+
+
+/******************** QUERY STYLE *************************/
+
+@media only screen and (max-width: 542px) {
+    .container-login {
+        width: auto;
+    }
+}
