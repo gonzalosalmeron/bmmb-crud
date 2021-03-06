@@ -22,10 +22,18 @@ html {
     opacity: 100%;
 }
 
+#login img {
+    transition: transform 1s;
+}
+
+#login img:hover {
+    transform: scale(1.1);
+}
+
 .login-div {
     text-align: center;
     position: relative;
-    margin-top: 30vh;
+    margin-top: 20vh;
     animation-name: example;
     animation-duration: 2.4s;
     animation-direction: normal;
@@ -65,8 +73,12 @@ html {
     display: inline-block;
     padding: 8px 18px;
     margin-top: 20px;
-    border-color: #2e2e2e;
-    transition: border-color 0.5s;
+    border: 1.5px outset #2e2e2e;
+    -webkit-transition: border 0.8s;
+    -moz-transition: border 0.8s;
+    -o-transition: border 0.8s;
+    -ms-transition: border 0.8s;
+    transition: border 0.8s;
 }
 
 #button-login button:hover {
@@ -74,7 +86,7 @@ html {
     display: inline-block;
     padding: 8px 18px;
     margin-top: 20px;
-    border-color: #ffffff;
+    border: 1.5px inset #ffffff;
 }
 
 .previous {
@@ -109,5 +121,8 @@ html {
 @media only screen and (max-width: 542px) {
     .container-login {
         width: auto;
+    }
+    .login-div {
+        margin-top: 20vh;
     }
 }
