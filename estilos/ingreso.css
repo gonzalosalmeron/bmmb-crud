@@ -1,0 +1,86 @@
+/********************** BARRA DE NAVEGACIÓN ***********************/
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15.04rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+.texto-bienvenida {
+    display: inline;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+
+/********************** TABLON RECIENTES ***********************/
+
+#ejemplo-grid {
+    margin-top: 40px;
+}
+
+.col {
+    background-color: aqua;
+    border: 2px solid black;
+}
+
+
+/********************** ALTAS DE USUARIOS ***********************/
+
+#tablon-recientes {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#titulo-altas {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.fa-trash-alt {
+    color: rgb(223, 31, 31);
+}
+
+
+/********************** MEDIA QUERY ***********************/
+
+@media (max-width: 991px) {
+    .texto-bienvenida {
+        display: none;
+    }
+}
