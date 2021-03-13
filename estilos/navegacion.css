@@ -1,0 +1,32 @@
+/************************* LAYOUT BÁSICO *************************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/************************* NAVEGACIÓN *************************/
+
+#navegacion {
+    background-image: url('../imagenes/nav-background.gif');
+    height: 100vh;
+    padding-top: 30vh;
+}
+
+.tablaNavegacion {
+    height: auto;
+    background-color: rgba(119, 119, 119, 0.295);
+    margin: 0 auto;
+    padding: 30px 30px 30px 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.tablaNavegacion h1 {
+    text-align: center;
+}
+
+.tablaNavegacion a {
+    color: white;
+}
